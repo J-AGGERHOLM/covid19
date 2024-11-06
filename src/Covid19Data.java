@@ -19,16 +19,23 @@ public class Covid19Data {
     }
 
 
+    public String getRegion() {
+        return Region;
+    }
+
+    public String getAldersGruppe() {
+        return AldersGruppe;
+    }
+
     @Override
     public String toString() {
-        return "Region{" + Region +
-                "Regionskode = " + Regionskode +
-                ", aldersgruppe = '" + AldersGruppe + '\'' +
-                ", bekræftede tilfælde = '" + bekræftedeTilfælde + '\'' +
-                ", dødsfald = " + døde + '\'' +
-                ", indlagte = " + indlagte + '\'' +
-                ", dato = " + dato + '\'' +
-                '}';
+        return "Region:     " + Region +
+                "       Regionskode = " + Regionskode +
+                ",      aldersgruppe = '" + AldersGruppe + '\'' +
+                ",      bekræftede tilfælde = '" + bekræftedeTilfælde + '\'' +
+                ",      dødsfald = " + døde + '\'' +
+                ",      indlagte = " + indlagte + '\'' +
+                ",      dato = " + dato + '\'';
     }
 
 }

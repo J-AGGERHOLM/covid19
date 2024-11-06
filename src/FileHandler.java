@@ -14,7 +14,7 @@ public class FileHandler {
         Scanner sc = null;
 
         try {
-            sc = new Scanner(file, StandardCharsets.ISO_8859_1);
+            sc = new Scanner(file,StandardCharsets.UTF_8);
             sc.nextLine();
         } catch (FileNotFoundException e) {
             System.out.println("can't find file");
@@ -46,6 +46,8 @@ public class FileHandler {
 
 
     }
+
+
 
 
 
